@@ -1,10 +1,12 @@
+"use client";
+import React from "react";
 import Link from "next/link";
 
-export const Footer = () => {
+export const Contact = () => {
   return (
-    <div className="bg-gray-200 border-t border-gray-500 flex justify-around items-center w-full px-36 py-8 ">
-      <div className=" mx-auto flex mt-16 mb-3 justify-between">
-        <div className=" flex flex-col gap-6">
+    <div className="bg-gray-200 border-t border-gray-500  ">
+      <div className="w-[1216px] mx-auto flex mt-16 mb-3 justify-between">
+        <div className="w-[289px] flex flex-col gap-6">
           <div className="text-lg font-semibold">About</div>
           <div>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, vel
@@ -23,13 +25,13 @@ export const Footer = () => {
         <div className="flex flex-col gap-2">
           <Link href="/">Home</Link>
           <Link href="/blog">Blog</Link>
-          <Link href="/contacts">Contact</Link>
+          <Link href="/contact">Contact</Link>
         </div>
         <div>
           <img src="./Social wrapper.png" alt="" />
         </div>
       </div>
-      <div className="w-full mx-auto border-t border-gray-500 py-5 flex items-center justify-around">
+      <div className="w-[1216px] mx-auto border-t border-gray-500 py-5 flex items-center justify-between">
         <div className="flex gap-2.5">
           <img src="./Union.png" alt="" />
           <div className="">

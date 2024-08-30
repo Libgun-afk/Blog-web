@@ -6,7 +6,12 @@ const SingleList = async ({ params }) => {
 
   return (
     <>
-      <div>{onePost.title}</div>
+      <div>
+        <div className="font-bold text-xl">{onePost.title}</div>
+        <img src={onePost.cover_image} alt="" />
+        {onePost.tag_list}
+        {onePost.published_at}
+      </div>
     </>
   );
 };

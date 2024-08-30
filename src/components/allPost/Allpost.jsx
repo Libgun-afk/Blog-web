@@ -11,21 +11,31 @@ export const AllPost = ({ posts }) => {
   };
 
   return (
-    <div className="flex flex-wrap gap-16">
+    <div
+      className="flex flex-wrap gap-4 justify-center 
+    "
+    >
       {data.map(({ id, cover_image, title, tag_list, published_at }, index) => {
         return (
-          <Card
-            key={index}
-            id={id}
-            cover_image={cover_image}
-            title={title}
-            tag={tag_list[0]}
-            published_at={published_at}
-          />
+          <div className="  flex flex-wrap gap-10">
+            <Card
+              key={index}
+              id={id}
+              cover_image={cover_image}
+              title={title}
+              tag={tag_list[0]}
+              published_at={published_at}
+            />
+          </div>
         );
       })}
       {data.length != posts.length && (
-        <button onClick={moreHandler}>More...</button>
+        <button
+          onClick={moreHandler}
+          className="text-[#696A75] text-base font-medium w-[123px] h-12 rounded-md border-[1px]"
+        >
+          Load More
+        </button>
       )}
     </div>
   );
